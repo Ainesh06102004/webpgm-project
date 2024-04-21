@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="user.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div style="display: flex; justify-content: right;">
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <h2 style="font-family: 'Poppins',sans-serif;">Register Courses</h2>
+    <div class="table-container" style="margin-top: 80px;">
+    <table>
+        <thead>
+            <tr>
+                <th>Courses</th>
+                <th>Faculty</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>OS</td>
+                <td>Kopperundevi N.</td>
+                <td>
+                    <button onclick="reg1();" id="regbut1">
+                        Register
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>AI</td>
+                <td>Sridhar Raj S.</td>
+                <td>
+                    <button onclick="reg2();" id="regbut2">
+                        Register
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>DSD</td>
+                <td>Avinash Chandra</td>
+                <td>
+                    <button onclick="reg3();" id="regbut3">
+                        Register
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>MPMC</td>
+                <td>Nawaz Shafi</td>
+                <td>
+                    <button onclick="reg4();" id="regbut4">
+                        Register
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px;" id="msg"></div>
+
+
+    <button style="margin-top: 70px;">
+        <a href="user.html">Go back</a>
+    </button>
+    <script>
+        function reg1(){
+            document.getElementById("regbut1").remove();
+            document.getElementById("msg").innerHTML = "Course Registered Succesfully";
+        }
+        function reg2(){
+            document.getElementById("regbut2").remove();
+            document.getElementById("msg").innerHTML = "Course Registered Succesfully";
+        }
+        function reg3(){
+            document.getElementById("regbut3").remove();
+            document.getElementById("msg").innerHTML = "Course Registered Succesfully";
+        }
+        function reg4(){
+            document.getElementById("regbut4").remove();
+            document.getElementById("msg").innerHTML = "Course Registered Succesfully";
+        }
+    </script>
+</body>
+
+</html>

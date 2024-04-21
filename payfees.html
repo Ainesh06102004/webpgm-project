@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="user.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div style="display: flex; justify-content: right;">
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="fee1">
+                  <td>Semester Fees</td>
+                  <td>304000</td>
+                  <td>
+                    <button>
+                        <a href="qrcode.html">Pay</a>
+                    </button>
+                  </td>
+                </tr>
+                <tr id="fee2">
+                    <td>Hostel Breakage Fee</td>
+                    <td>4500</td>
+                    <td>
+                        <button>
+                            <a href="qrcode.html">Pay</a>
+                        </button>
+                    </td>
+                  </tr>
+            </tbody>
+    </div>
+    <!-- <div id="msg" style="display: flex; justify-content: center; align-items: center; margin-bottom: 40px; font-weight: bold; font-size: 20px;"></div>
+    <script>
+        function pay1(){
+            document.getElementById("fee1").remove();
+            document.getElementById("msg").innerHTML="Paid Successfully"
+        }
+        function pay2(){
+            document.getElementById("fee2").remove();
+            document.getElementById("msg").innerHTML="Paid Successfully"
+        }
+    </script> -->
+    
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Course Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="admin.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div style="display: flex; justify-content: right;">
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <h2>Add Course Details</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Courses</th>
+                    <th>Slot</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Calculus</td>
+                    <td>A2+TA2</td>
+                    <td>
+                            <input type="file" id="upload-file1" name="userfile" required>
+                            <input type="submit" value="Upload" onclick="display1();" id="data1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Calculus</td>
+                    <td>A1+TA1</td>
+                    <td>
+                        <input type="file" id="upload-file2" name="userfile" required>
+                        <input type="submit" value="Upload" onclick="display2();" id="data2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Differential Equations</td>
+                    <td>E2+TE2</td>
+                    <td>
+                        <input type="file" id="upload-file3" name="userfile" required>
+                        <input type="submit" value="Upload" onclick="display3();" id="data3">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Differential Equations</td>
+                    <td>E1+TE1</td>
+                    <td>
+                        <input type="file" id="upload-file4" name="userfile" required>
+                        <input type="submit" value="Upload" onclick="display4();" id="data4">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items:center; font-weight: bold; font-size: 20px; margin-top: 40px;" id="msg"></div>
+
+    <button style="margin-top: 70px;">
+        <a href="admin.html">Go back</a>
+    </button>
+
+    <script>
+        function display1(){
+            document.getElementById("data1").remove();
+            document.getElementById("upload-file1").remove();
+            document.getElementById("msg").innerHTML = "File Uploaded successfully!"
+        }
+
+        function display2(){
+            document.getElementById("data2").remove();
+            document.getElementById("upload-file2").remove();
+            document.getElementById("msg").innerHTML = "File Uploaded successfully!"
+        }
+
+        function display3(){
+            document.getElementById("data3").remove();
+            document.getElementById("upload-file3").remove();
+            document.getElementById("msg").innerHTML = "File Uploaded successfully!"
+        }
+
+        function display4(){
+            document.getElementById("data4").remove();
+            document.getElementById("upload-file4").remove();
+            document.getElementById("msg").innerHTML = "File Uploaded successfully!"
+        }
+    </script>
+</body>
+
+</html>

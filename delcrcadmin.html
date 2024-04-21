@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="admin.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div style="display: flex; justify-content: right;">
+            <a href="index.html">Logout</a>
+        </div>
+    </div>
+    <h2>Delete Courses</h2>
+    <div class="table-container" style="margin-top: 80px;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Courses</th>
+                    <th>Slot</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="delbut1">
+                    <td>Calculus</td>
+                    <td>A1+TA1</td>
+                    <td>
+                        <button onclick="del1();">
+                            <a>
+                                Delete
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="delbut2">
+                    <td>Calculus</td>
+                    <td>A2+TA2</td>
+                    <td>
+                        <button onclick="del2();">
+                            <a>
+                                Delete
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="delbut3">
+                    <td>Differential Equations</td>
+                    <td>E1+TE1</td>
+                    <td>
+                        <button onclick="del3();">
+                            <a>
+                                Delete
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="delbut4">
+                    <td>Differential Equations</td>
+                    <td>E2+TE2</td>
+                    <td>
+                        <button onclick="del4();">
+                            <a>
+                                Delete
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 50px;" id="msg"></div>
+
+    <button style="margin-top: 70px;">
+        <a href="admin.html">Go back</a>
+    </button>
+
+    <script>
+        function del1(){
+            let x = document.getElementById("delbut1");
+            let y = document.getElementById("msg");
+            x.remove();
+            y.innerHTML="Course deleted succesfully";
+        }
+        function del2(){
+            let x = document.getElementById("delbut2");
+            let y = document.getElementById("msg");
+            x.remove();
+            y.innerHTML="Course deleted succesfully";
+        }
+        function del3(){
+            let x = document.getElementById("delbut3");
+            let y = document.getElementById("msg");
+            x.remove();
+            y.innerHTML="Course deleted succesfully";
+        }
+        function del4(){
+            let x = document.getElementById("delbut4");
+            let y = document.getElementById("msg");
+            x.remove();
+            y.innerHTML="Course deleted succesfully";
+        }
+
+    </script>
+</body>
+
+</html>
